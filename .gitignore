@@ -1,0 +1,11 @@
+__pycache__/
+*.pyc
+*.exe
+.ipynb_checkpoints/
+venv/
+.env
+.vscode/
+DL/
+GenAi/
+100DaysOfMl/
+csvFiles/

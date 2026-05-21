@@ -1,0 +1,364 @@
+AI vs ML vs DL
+AI --> ML --> A Subset of Ai --> DL --> Subset of ML
+
+AI
+A branch of CS that is concerned with building smart & intelligent machines
+
+ML
+It is a technique to implement Ai that can learn from the data by themselves without being explicitly programmed
+
+## Types of ML based on supervision
+> Supervised Learning (if I/O & O/P giv, so chec for O/P col to distinguish b/w classificatn & regressn, if categorical output -> Classification and if Numerical output -> Regression)
+> Unsupervised Learning (if only I/O is present and have 4 types -> Clustering(divide into grps), Dimensionality Reductn(reducing unnecessary cols), Anamoly Detectn(dectectn of outlayers), Association Rule learning(finding relatnship))
+> Semi-supervised Learning ( in this we give label to only two to three data pts and algo label all data a/c to that)
+> Reinforcement Learning
+
+
+
+
+
+1. Supervised Learning  
+In this, ML algorithm learns from Labelled data
+Ex: it's like giving one set of image labelled as apples & another labelled as Bananas to ml model. So now model nows how apple and banana looks and so take them as refrence and try to find unknown image by matching them
+So here we give supervision in form of labelled data to model.
+Therefore, it means training the model with labelled data.
+
+Types of SL
+1. Classification - It is about predicting a class or discrete values or prediction b/w single values
+Ex: Male or Female, True or False, Apple & banana example
+Algo's : Decision Tree, Random Forest, k-nearest Neighbor
+Evaluation Metric : Accuracy score
+
+2. Regression - It is about predicting a quantity or no. or continuous values 
+Ex: Salary, age, price
+Like predicting rainfall in cm on specific temperature, So here we give data to model of rainfall on diff temp
+Algo's : Logistic, Polynomial, Support Vector Machines
+Evaluation Metric : Mean Absolute Error
+
+
+
+
+
+2. Unsupervised Learning  
+In this, ML algorithm learns from Unlabelled data
+Ex: It's like giving one set having apples and Bananas and giving no idea of what they are . So then model will identify pattern itself and group them individually
+
+Algo's - k-means Clustering, Hierarchial Clustering, Principal Component Analysis(to reduce dimension of dataset), Apriori, Eclat
+
+
+Types of UL
+1. Clustering - It is an unsupervised task which involves grouping the similar data points
+Ex: A mobile company want to inc. revenue, so they provide user data to model and just an example model form 2 cluster one of low data users and another of high by identifying patterns or similar user behaviour
+
+2. Association - It is an unsupervised task that is used to find important relationship b/w data points
+Ex: A grocery store where customer 1 buys bread,milk, fruits,wheat and c2 buys bread,mil,rice,butter. So here model will analyse that customer who buys milk will also buys bread. So it will recommend c3 bread when he buys milk or when c3 goes and buys milk, it is highly likely that he will also buys bread
+Ex: Ott platform lie netflix also uses association algos to recommmend movies
+
+
+
+
+
+
+3. Reinforcement Learning - It is an area of ML concerned with how inteligent agents take actions in an env to maximize its reward
+4 Parts: Env -> Agent -> Action -> reward
+EX: Playing chess in system where chess is an env, system acts as agents who allow to take action(playing) and when it wins we get reward
+
+
+
+
+
+
+# Types of Ml based on Productn
+
+1. Batch Learning : training the model on complete data offline on system and then deploying
+- Workflow : the model do not evolved itself on new data and so model take new data and merge with existing and train on that and then test and deployed  
+- Problem : Lots of data, Hardware limitatn, Availability
+
+2. Online Learning : In this, model is trained on data, then tested & after then deployed to the server and then model give predictn on new data as well as learn on new data on server, no need to offline system   
+
+> When to use Online over Batch -
+- Where there is concept drift : where problem nature or it's context changes
+- Cost effective
+- Faster Soln
+
+> Online library for Online learning
+- River : py lib for online ml, it is the merger b/w creme & scikit-multiflow
+
+> Problem : Tricky to use, Risky
+
+
+
+
+
+# Types of ML based on learning(learning - 2 type : Memorizing & Generalizing(understanding concept,relatnship))
+
+1. Instance Based : In this, data is feed into model and when new data pt come it find similarity and give result based on that and it's ex can be kNN algo
+
+2. Model Based : In this, model train on data and try to find mathematical relatn and draws boundary and once it trained, it does not require training data as it give output based on boundaries and learning
+
+> Difference : 
+- Instance : More Storage as Stores training data, can't throw training data, don't train model, lazy model.
+- Model : Less storage as eqn of model is stored only, can throw training data, train model from training for model parameter
+
+
+
+
+
+# Challenges in ML :
+
+> Data collectn : For gathering data -> 2 way : API or Web scraping
+> Unsufficient data and Non-Availability of Labelled data
+> Non Representative Data : Improper data representatn lead to low performance of model which is called as Sampling Noise means data should not be biased and show all possiblities
+> Poor Quality Data : means data contains outliers and missing values
+> Irrelevant Features
+> Overfitting
+> UnderFitting
+> Software Integratn : Integrating model into systems
+> Offline learning and Deployment(MLOps)
+> Cost Involved
+
+
+
+
+# Application of ML :
+> Retail Shops and E-commerce
+> Banking & Finance (checking & matching profiles with loan defaulters)
+> Transport (OLA/Uber fare changing during buss hrs)
+> Manufacturing (Automatn) : Help in doing predictive maintenance
+> Consumer Internet 
+
+
+
+
+## MLDLC - ML Development Life Cycle
+-Steps :
+
+> Framing the Problem  : It includes analysing, requirement and everything we need for solving problem
+
+> Gathering Data
+- How : csv files, API's, Web scraping, Database(Data wharehouse), Space clusters
+
+> Data pre-processing
+- Like : removing duplicates, handling missing val, outlayers, standardizatn, etc
+
+> Exploratory Data Analysis
+- Visualizatn, univariate/bivariate, outliers detectn, handling imbalance data,etc
+
+> Features Engineering & Selectn
+- Forming new feature or making changes in existing and selecting important features
+
+> Model Training, Evaluation and Selection
+- Training model & evaluating and then selecting it
+
+> Model Deployment
+
+> Testing 
+- Like : A/B Testing
+
+> Optimize
+- Before optimizing do : Taking backup of model and data, load balancing
+
+
+
+
+
+DL
+It is a subfield of ML that uses Artificial Neural Network to learn from the data
+It is a Network of neurons which is like human body neuron system.
+It contains main 3 layers: 
+Input layer - It contain image(ex) and there is only one input layer
+Hidden layer - It contain pixels(ex) and they can be many like hl1,hl2,hl3,etc 
+Output layer - It shows results and only one
+Each neuron in input layer is connceted to each neuron in hidden layer 
+
+ML vs DL 
+In ml, we need to tell model about features of inputs and then it classify a/c to that and give Output
+Whereas in dl, model algo's are so powerful that they itself analyse and extract feature & classify and then give output 
+
+
+# Machine Learning Model : It is a fn that tries to find relationship b/w the Features and Target variables
+It tries to find pattern in data, understand the data & train on data. Based on this Learning, a ML model makes Predictns & recognise pattern
+Models fitting means plotting data pts on graph and finding relationships & patterns
+
+##  Supervised Learning Model
+# Classification ->
+1. Logistic Regression(For binomial classificatn) -> It is a Regressor model but can be used for classificatn
+2. SVM Classifier(for building hyperplane for separating data and classifying them)
+3. Decision Tree
+4. K-Nearest Neighbor
+5. Random Forest
+6. Naive Bayes Classifier
+
+# Regression -> 
+1. Linear Regression(For Straight line)
+2. Lasso Regression
+3. Polynomial Regression
+4. SVM Regressor
+5. Random Forest Regressor
+6. Bayesian Linear Regressor
+
+
+## Unsupervised Learning Model
+1. K-Means Clustering
+2. Hierarchial Clustering
+3. PCA
+4. Apriori
+5. Eclat
+
+
+## Model Selection -> How to choose the right ML Model
+- It depends on various factor such as dataset,task,nature of model,etc
+
+# Model can be selected based on:
+1. Types of Data available:
+a. Image & Videos -- CNN
+b. Text or Speech data -- RNN
+c. Numerical data -- SVM(when dataset is small and don't have outlayers, Not useful when larger dataset), Logistic Regression, etc
+
+2. Based on task we need to carry : 
+a. Classification task - SVM, Logistic Regression, etc
+b. Regression task -- Linear, Random Forest, Polynomial
+c. Clustering task -- K-Means Clustering,Hierarchial Clustering
+
+# Cross Validation : In this we evaluate accuracy score of diff group in dataset using different model and then compare Mean Accuracy of each model to find best suited model for that particular dataset
+- Mean Accuracy is avg of accuracy of each iteratn done when finding accuracy score of groups of dataset
+- It is present in sklearn.model_selectn
+
+- Ex of Cross Validation implementatn:
+
+> from sklearn import datsets.linear_model
+> from sklearn.model_selectn import cross_val_score
+> diab = datsets.load_diab()
+> x = diab.data[:150]
+> y = diab.target[:150]
+> lasso = linear_model.Lasso()
+> print(cross_val_score(lasso,x,y,cv=3))
+
+
+## Overfitting : Means model is overtrained on training data. It happens when model learns detail & noise in training dataset to extent that it negatively impacts performance of model
+- Optimal : Curve will be regular or generalised
+- Overfit : Curve try to join/fit all data pts
+
+# Sign of Overfitting : High Traning data Accuracy and Very Low Test data Accuracy
+
+# Cause of Overfitting : 
+Less Data, Increased Complexity of model when simple data, More no of layers in Neural Network
+
+# Preventing Overfitting by :
+Using more data, Reduce no of layers in Neural Network, Early stopping(stop training model when started overfitting), Bias-Variance Tradeoff(model optimization technique), Use Dropouts(used in NN to drop neuron for stopping overfitting)
+
+
+## UnderFitting : It happens when model does not learn enough from data. So it occur when ml model cannot capture underlying trend of data
+- Optimal : it tries to find trend and form curve a/c to that
+- Underfit : it is not able to find trend so form a straight line(try to generalise all dataset which lead to high bias)
+
+# Sign of Underfitting : Very Low Traning data Accuracy 
+
+# Causes for Underfitting :
+Choosing wrong model, less complexity of model, less variance but high bias
+
+# Prevent Underfitting by :
+Choosing correct model, Increasing complexity of model, more no of parameters to model, Bias-Variance Tradeoff
+
+
+## Bias-Variance Tradeoff :
+# Bias : the difference b/w avg predictns of our model and correct value which we are trying to predict 
+- So when we use linear model there will be huge bias but no variance
+
+# Variance : It is the amt that the estimate of target functn will change if different training data is used
+- But when we use complex model, it will have 0 bias but high variance
+
+- In Underfitting, High Bias & Low Variance
+- In Overfitting, Low Bias & High Variance
+
+# Take on : 
+- When we use more complex model, it will cause overfitting as variance will be high but bias will be negligible
+- But when we use simple model, model will be Underfit as it will have low variance but high bias.
+- So we need to have middle complexity model having significant bias and variance val.
+
+# Techniques to have better Bias-Variance Tradeoff :
+Good model selectn, Regularizatn(reduce coefficient -> reduce complexity), Dimensionality Reductn(reducing features), Ensemble methods(multiple model to reduce Underfitting)
+
+
+## Loss Functn : It measures how far an estimated value is from its true value.
+- It is helpful in determining which model perform well & which parameters are better
+- Lower the loss val  --> Higher effecient the model will be
+
+# Formula : loss = (1/n)sigma(correct - predicted)^2
+
+
+## ML Evaluation :
+# Accuracy score : In classificatn, accuracy score is the ratio of no of correct predictns to the total no of input data points.
+- Formula : A.S = (No of correct predictns / total no of data pts) * 100
+- To use : from sklearn.metrics import accuracy_score
+
+# Mean Squared Error : MSE measures the avg of the Squares of error, that is, the avg squared difference b/w the estimated value and actual val
+- Formula :  MSE = (1/n)sigma(correct - predicted)^2
+- To use : from sklearn.metrics import mean_squared_error
+
+
+## Types of Parameters :
+# Model Parameters : These are the parameters of model that can be determined by training with training data. These can be conisdered as Internal Parameters.
+> Weights - Weight decides how much influence the Input will have on the Output (can be conisdered slope of line)
+- So changing the Weight of line -> Will change the Orientation of line
+> Bias - It is the offset value given to model. Bias is uesd to shift the model in a particular directn. It is similar to Y-intercept. 'b' is equal to 'Y' when all features value are zero.
+- So changing Bias value -> mean changing the Y-intercept(val of y when x=0) of line
+
+- Eq : Y = w*x + b   -> line can have multiple features
+Here : x(feature/input), y(target/output), w(wt), b(bias)
+
+# HyperParameters : These are parameters whose values control the learning process(fitting the data). These are adjustable parameters used to obtain an optimal model. These can be conisdered as External Parameters.
+
+> Learning rate - the amt of change in the values of wt & bias to minimise the loss fn
+- It is a turning parameter in an optimization algo that determines the step size at each iteratn while moving toward a minimum of a loss fn
+- Value of learning rate is depend on mag of dataset and wt
+
+> No of Epochs - No of iteration for training model again & again for finding better bias & wt value
+- No of times the model iterates over the entire dataset.
+- No of iteratn should be Optimal as low no -> Underfitting & Higher no -> Overfitting
+
+
+## Model Optimization : 
+Optimization refers to determining best parameters for a model, such that the loss fn of the model decreases, as a result of which the model can predict more accurately
+
+# Gradient Descent
+> G.D is an optimization algo used for minimizing the loss fn in various ml algorithms. It is used for updating the parameters of learning model.
+> We started with random wt val & gradually Increasing/Decreasing wt based on initial pt and then the val of wt on which we have minimum loss fn that pt is global minimum and this process is called Gradient Descent
+> Global Minimum : the pt where the value of loss fn is lowest
+
+> Formula :  w(updated wt) = w(initial wt) - L * dw
+and  b(updated bias) = b(initial bias) - L * db
+Here, dw(partial derivative of loss fn wrt w) & db(partial derivative of loss fn wrt b)
+
+
+
+
+
+
+## HOW TO USE KAGGLE DATA INTO GOOGLE COLAB
+
+= FIRST GENERATE KAGGLE API TOKKEN AND COPY It
+- NOW GENERATE KAGGLE.JSON FILE 
+- NOW PASTE THAT FILE INTO COLAB
+- NOW RUN THESE COMMANDS:
+> !mkdir ~p ~/.kaggle
+> !cp kaggle.json ~/.kaggle/
+- NOW COPY API CMD OF DATASET YOU WANT TO USE
+- AND RUN THAT CMD IN COLAB
+
+# AT LAST WE NEED TO UNZIP FILES, SO RUN THESE CMDS:
+> import zipfile
+> zip_ref = zipfile.ZipFile('fileName.zip', 'r')
+> zip_ref.extractall('/content')
+> zip_ref.close()
+
+
+
+
+
+
+## MODEL TRAINING STEPS:
+1. LOAD THE MODEL
+2. FIT THE TRAINING DATA INTO MODEL
+3. NOW PREDICT ON TEST DATA
+4. ATLAST CHEC THE ACCURACY SCORE

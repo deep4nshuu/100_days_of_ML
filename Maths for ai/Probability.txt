@@ -1,0 +1,22 @@
+# Probability : It is a branch of mathematcis that deal with calculating the likelihood of a given event to occur
+- The Probability value lies b.w 0(impossible) & 1(certain)
+- Probability of an event to occur = No of ways an event occur / Total no of outcomes
+
+# Random Variable : It is a numerical descriptn of outcomes of Random events OR a Random var maps outcomes of random events to numerical values
+Ex: Consider Tossing a coin where Random var is x & for Random events of tossing(H/T) have Possible val as 0 & 1
+
+# Types of Random Variable: Discrete(takes only Discrete or distinct val) & Continuous(takes any val in a giv range)
+
+# Probability Distribution : For a random var, it describes how the probabilities are distributed over values of random var
+
+# Normal Distribution : It is an arrangement of dataset in which most of the data pts lie in the middle of the range & the rest taper off symmetrically toward either extreme
+It is also known as Gaussian Distribution(have symmetrical curve)
+And value of Mean,Mode,Median is all at same centre pt of graph
+
+# Skewness : A data is considered Skewed when the Distribution curve appears distorted or Skewed either to the left or right in a statistical distributn
+1. Positively Skewed(more data on left) : Curve high to right where mean,Median,Mode(top of curve) follows from left to right
+2. Negatively Skewed(more data on right) : Curve high to left where mean,Median,Mode(top of curve) follows from right to left
+
+# Poisson Distribution : It is a Probability distributn that measures how many times an event is likely to occur within a specified period of time.
+It is used to understand independent events that occur at a constant rate within a given interval of time.
+- Formula : p(x) = (e^-(lambda))*(lambda)^x / x(fact.)  where x(no of times event occurs), lambda(mean no of events), e(euler no-2.71828)

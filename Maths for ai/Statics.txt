@@ -1,0 +1,49 @@
+# Statistics : It is a way of finding information about the dataset
+# Types of Statistics :
+1. Descriptive : Describing the data like central tendences & variability and used in data analysis
+2. Inferential : take data from  sample and make inferences & predictns about larger datasets like correlatn and used in data science
+
+# Central tendences: Mean,Median,Mode  &  Variability : Range, std, Variance 
+
+# Types of Statistical Study:
+1. Sample study : carried out on a sample representing total populatn
+2. Observational Study : in this we collect and analyse data and don't change data. Here we find correlatn
+3. Experimental Study : Here we control & manipulate data
+
+# Types of data :
+1. Categorical : Data is in alphbets or classes 
+-> SubTypes : Nominal(a classificatn of categorical var that don't provide any quanti value or significance like gender) and Ordinal(data in which values follow a natural order like review system reviewing good,bad,very good)
+2. Numbers : Data is in form of numbers  -> SubTypes : Discrete(data that can take certain values or only integers not float like students of class) and Continous(can have almost any numeric value. Unlike Discrete, they can have decimal value)
+
+# Sample study : A sample study is a study which is carried out on a sample which represents total populatn
+# Sampling Techniques(Probability Sampling Techniques) :
+1. Simple Random Sampling -> the sample is randomly picked from a larger populatn. So all data points have equal Probability
+Pros(No sample bias, Balanced Sample, Simple) and Cons(ONly for larger datasets, can't properly represents populatn sometimes)
+2. Systematic : In this, the sample is selected from populatn at regular intervals. It is carried when populatn is homogenous/same and uniformly distributed
+Pros(Quick, Less bias, Even distribtn) and  Cons(Data manipulatatn risk, require randomness in data, populatn should not have pattern)
+3. Stratified Random Sampling : populatn is subdivided into grps called strata and then sample is obtained randomly from strata
+Pros(finds imp characters, highly precise if difference is high b/w strata) and  Cons(not performed on populatn that can't be divided, overlapping data pts)
+- In this we select all grps and then randomly selects samples from them.
+4. Cluster Sampling : carried on populatn hving inherent/natural grps. populatn is subdivided into clusters and the clusters is randomly selected for sample
+- In this, we randoml select clusters and then select sample from that
+Pros(require fewer resources, reduced variability, adv of both random & Stratified Sampling)  and Cons(can't be done on unnatural grps, can't provide general insights of entire populatn)
+
+# Central tendencies : A value that represents central pt or typical value of dataset. It's a value that summarize the data
+- Mean(avg value), Median(middle val, asc order) and Mode(value that occurs most often)
+
+# Variability 
+- Range(difference b/w largest & smallest values to give idea about distribtn of dataset)  -> R = hi - low
+- Variance : How far each no in set is from mean   -> v = (sigma(x-u)^2)/n : u(mean),x(data pts),n(no of populatn/sample)
+- Standard deviatn : square of variance and tells how a grp of no is spread out from mean   -> std = sqrt(v)
+
+# Percentiles : a val on a scale of 100 that indicate % of distribtn that is equal to or below to
+# Quantiles : it tells how many val in dataset are above or below a certain limit. It divides members of dataset into equal sized subgrps
+
+# Correlatn : to which extent 2 var are related to each other and it doesn't mean one event cause another event
+# Causation : means one event cause another event to occur. so there is cause-effect relatnship
+
+# Hypothesis : An assumption based on observatns of experiments
+- Types :
+1. Null : It is the commonly accepted fact
+2. Alternative : opposite to null and challenges null
+# Hypothesis Testing : A method to test the assumption made in experiments

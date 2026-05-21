@@ -1,0 +1,36 @@
+Vectors in cs - it is a list of no. in only one col or one row
+
+Operations on Vectors:
+1. Addition : It happens only when vectors are of same shape(same no of dimension) 
+A/c to math: x dim ele adds to x and y to y and z to z
+A/c to graph: extend both vectors line and where they form rectangle or interesct, join it with origin that will be the resultant vector
+2. Substraction: 
+A/c to math: Ele wise Substraction
+A/c to math: Make opposite vector of vector which we are substracting abd now do as we do for additn
+3. Multiply vector by scalar
+Scalar is multiplied to all ele of vector and get shrink or inlarge
+NOTE: -ve sign in front of vector changes the sign of elements presents in the vector
+4. Angle bw 2 vectors
+If 2 vectors have very small angle b/w them then both vectors have similar values or are similar
+If angle b/w to vectors is large, then they are very different
+
+
+# Vectors
+- i & j are the 'basis Vectors' of xy coordinates systm
+- Basis : The basis of vector space is a set of linearly dependent vectors that span the full space
+- Linear combinatns of v & w: av + bw where a&b are scalar and v&w are vector
+- the Span of v & w is the set of all their Linear combinatns
+- if we thin of 2 diff line vectors, then they can covers all 2d points in space
+- but when they are in same line they cover all points on a line passin thru origin
+- when multi vector presents and if third vector is not adding any third dimension, then it present in previous, so we can say it is linearly dependent and can be written sum of other two as : u = v + w
+- but if it add 3rd dim, then it is linearly independent and can be written as: u != v + w
+- Shear : transformatn of space towards vector
+
+
+# Linear Transformatn -> It is a Linear Functn which take vector as input and vector as output OR rotatn where grid lines remain parallel and evenly spaced
+- Everytime think of a vector, think of transformatn of space or grids towards its positioning
+
+# Matrix Multiplicatn : if we plot all vectors in Matrix, then rotate 90 and Shear it, then where 3rd vector pts is resultant vector
+
+
+Matrix in cs - it is a list of no. in multiple rows and cols
