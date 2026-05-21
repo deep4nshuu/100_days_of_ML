@@ -5,6 +5,4 @@ __pycache__/
 venv/
 .env
 .vscode/
-DL/
-GenAi/
 csvFiles/
