@@ -1,0 +1,32 @@
+# Feature Engineering
+Feature Eng is the process of using domain knowledge to extract feature from raw data. These features can be used to improve the performance of ml algos
+
+
+# 4 Steps Included in this :
+
+> Feature Transformatn
+- Missing Values(Imputation)
+- Handling Categorical Features
+- Outlier Detection
+- Feature Scaling
+
+> Feature Construction
+Means constructing new features by using existing features
+
+> Feature Selection
+Means selecting important and relevant features
+
+> Feature Extraction
+
+
+Data -> 2 type : Numerical & Categorical
+Categorical data -> 2 type : Nominal(no relatn b/w classes & every class is equal) & Ordinal(relatn or ordering b/w classes)
+
+
+
+
+> How to apply Transformatn:
+- First load the transformatn fn
+- Now fit & transform the training & test data
+- Now convert np arr to pd dataframe
+- Now train the model using this transformed data

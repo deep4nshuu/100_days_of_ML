@@ -1,0 +1,16 @@
+# Feature Construction
+> It means constructing new fetures from existing features of dataset
+
+> Means combining features to form a new features
+
+> Ex- Combining Sib & Parch cols of titanic dataset into newer col called family type
+
+
+
+# Feature Splitting
+> It means splitting the features into sub features for better analysis
+
+> Means splitting an existing features into sub features
+
+> Ex- Splitting name col of titanic dataset into sub col as first & last name, designatn/ salutatn(mr,mrs)
+

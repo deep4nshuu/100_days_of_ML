@@ -1,0 +1,11 @@
+# Curse of Dimensionality
+- As we gradually increase the features, the accuracy of model increase but it happen to optimal level and after that it harms the model performance by adding more and more features
+
+# Why this Happen?
+1. As we increase the features, Sparsity b/w features increases means features are going far away means statistical features are disturbing
+So As Dimensions Increases  --->  Sparsity of Data Increases
+2. Computation Increases
+
+# Solution
+1. Feature Selection --> Forward Selectn & Backward Elimination
+2. Feature Extraction --> PCA(making new features from existing ones), LDA and tsne

@@ -1,0 +1,22 @@
+# Outliers
+It is a pt / obs which behave differently from all pts and impact efficiency of model
+
+# When they are imp?
+Usually in anamoly detectn and need to study dataset properly for understanding what to do with outliers
+
+# Effects of Outliers on ML Algo's
+- They highly impact Linear, Logistic Regression, Adaboost, Deep Learning as it contains wt
+- There is no impact on tree based algo's such as Decision tree,etc
+
+# How to treat Outliers
+1. Trimming the outliers as they make dataset thin and fast
+2. Capping means applying limit on start and end of dataset
+3. Treating Outliers as Missing Vals
+4. Applying Discretizatn as now Outliers can be capped in a range
+
+
+# How to detect Outliers
+1. Checking Distribtn as Normal or not by using z-score
+2. Plotting Boxplot which plot dist using IQR
+3. Using percentile distbtn
+4. Winsorizatn
